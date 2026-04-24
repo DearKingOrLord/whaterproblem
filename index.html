@@ -18,6 +18,8 @@
         <a href="#map">Карта</a>
         <a href="#plan">План</a>
         <a href="#budget">Затраты</a>
+        <a href="authors.html">Авторы</a>
+      <button class="donate-nav-btn" id="openDonate">Пожертвовать</button>
       </div>
     </nav>
   </header>
@@ -736,6 +738,42 @@
       <p>Тема: загрязнение воды и состояние арычной системы города Бишкек.</p>
     </div>
   </footer>
+
+  <div class="donate-modal" id="donateModal">
+  <div class="donate-box">
+    <button class="close-donate" id="closeDonate">×</button>
+
+    <h2>Пожертвование на EcoAryk</h2>
+    <p>
+      Поддержите проект по мониторингу и очистке арычной системы Бишкека.
+      Это демонстрационная форма для учебного сайта.
+    </p>
+
+    <form id="donateForm" class="donate-form">
+      <label>Номер карты</label>
+      <input 
+        type="text" 
+        id="cardNumber" 
+        placeholder="0000 0000 0000 0000" 
+        maxlength="19" 
+        required
+      >
+
+      <label>Сумма пожертвования</label>
+      <input 
+        type="number" 
+        id="donateAmount" 
+        placeholder="Например: 500" 
+        min="1" 
+        required
+      >
+
+      <button type="submit" class="btn primary">Отправить пожертвование</button>
+    </form>
+
+    <p id="donateResult" class="donate-result"></p>
+  </div>
+</div>
 
 <script src="java/script.js"></script>
 </body>
